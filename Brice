@@ -1,0 +1,24 @@
+#board  = [[0,0,0,1,0], #0=no mine (blank)(False)
+          [0,1,0,0,0],  #1=mine (True)
+          [1,0,1,0,0],  #2=unrevealed
+          [0,0,1,0,0],
+          [0,1,0,1,0]]
+
+def (row, col):
+
+
+def checkFieldsAroundMines(row, col, board):
+t=7 #total mines
+a = row
+b = column
+a=row-1
+    if board[row][col] == 1:
+        board[row][col] = 'T'
+        return True
+b=column-1
+    if board[row][col] != 1:
+       board[row][col] = 'F'
+        return False
+    a=a+1
+    b=b+1
+    t=t+[a][b]
